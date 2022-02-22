@@ -1,0 +1,69 @@
+
+<html>
+    <head> 
+      <meta charset="UTF-8" />
+      <title>Bit Race Tokens</title>
+      <link rel="icon" type="image/svg" href="bitrace_img.jpeg" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="index.css" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    </head>
+  
+    <body>
+      <main class="container-fluid">
+        <header>
+          <div id="logo-container">
+            <h1 id="logo-text" class="text-center">
+              Bit Race Tokens
+            </h1>
+  
+            <img id="mm-logo" src="bitrace_img.jpeg" />
+          </div>
+        </header>
+        
+        <section>
+          <div class="row d-flex justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Connect to see Bit Race Tokens
+                  </h4>
+  
+                  <button
+                    id = "connectButton"
+                    class="btn btn-primary btn-lg btn-block mb-3"
+                    onclick="login()"
+                  >
+                    Connect
+                  </button>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <p class="info-text alert alert-success">
+              Token Ids: <span id="tokens"></span>
+            </p>
+          </div>
+        </div>
+  
+      </main>
+      <script src = './main.js'> </script>
+    </body>
+  </html>
